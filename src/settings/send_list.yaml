@@ -1,0 +1,6 @@
+command_list:
+  - command: "test"
+    send_list: [
+      ["test1", 0x00],
+      ["test2", 0x00],
+    ]
