@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "njpwerner.autodocstring",  // docstring
+        "ms-python.mypy-type-checker",  // python 型チェック
+        "ms-python.python",  // python 環境
+        "ms-python.debugpy",  // python デバッグ用
+        "charliermarsh.ruff"  // python lint formatter用
+    ]
+}

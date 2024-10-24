@@ -1,0 +1,31 @@
+[tool.ruff]
+# 1行の最大文字数
+line-length = 150
+
+[tool.ruff.lint]
+# チェックするエラーの種類
+# https://docs.astral.sh/ruff/rules/#mccabe-c90
+# https://docs.astral.sh/ruff/settings/
+# https://qiita.com/taskforce_Hisui/items/9b89c5fad5ad327af9db
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "B",  # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "UP",  # pyupgrade
+    "N",  # pep8-naming
+]
+
+# 除外するエラーの種類
+ignore = [
+    "F401",  # 未使用importはエラー扱いとしない
+]
+
+# ファイルごとのエラー除外
+[tool.ruff.lint.per-file-ignores]
+"docs/source/conf.py" = ["E402"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"  # Accepts: "google", "numpy", or "pep257".
